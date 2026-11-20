@@ -15,7 +15,7 @@ document.querySelectorAll('.served-btn').forEach(function (btn) {
 form.addEventListener('submit', function (event) {
   // TODO 4: Prevent the form reload
   // Stop the browser's default page refresh by adding: event.preventDefault();
-event.preventDefault();
+  event.preventDefault();
 
   const patientCode = codeInput.value.trim();
   const serviceName = serviceSelect.value;
@@ -43,9 +43,8 @@ event.preventDefault();
   servedBtn.classList.add('served-btn');
   servedBtn.textContent = 'Served';
 
- servedBtn.addEventListener('click', function () {
-    card.remove();
-});
+  servedBtn.addEventListener('click', function () {card.remove();
+ });
 
 
   // Assemble and append the card to #queue-list
