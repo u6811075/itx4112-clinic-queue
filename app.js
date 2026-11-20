@@ -43,9 +43,8 @@ form.addEventListener('submit', function (event) {
   servedBtn.classList.add('served-btn');
   servedBtn.textContent = 'Served';
 
- servedBtn.addEventListener('click', function () {
-    card.remove();
-});
+  servedBtn.addEventListener('click', function () {card.remove();
+ });
 
 
   // Assemble and append the card to #queue-list
