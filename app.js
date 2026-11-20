@@ -15,7 +15,7 @@ document.querySelectorAll('.served-btn').forEach(function (btn) {
 form.addEventListener('submit', function (event) {
   // TODO 4: Prevent the form reload
   // Stop the browser's default page refresh by adding: event.preventDefault();
-event.preventDefault();
+  event.preventDefault();
 
   const patientCode = codeInput.value.trim();
   const serviceName = serviceSelect.value;
